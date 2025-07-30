@@ -12,7 +12,7 @@ body {
   margin: 60px auto;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px black (0,0,0,0.2);
 }
 
 h1 {
