@@ -1,94 +1,29 @@
 <!DOCTYPE html>
-<html lang="jp">
-
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ページ作成者 -->
-    <meta name="author" content="Osamu HASEGAWA">
-    <!-- ページ内容を表すキーワード（3〜5つくらい） -->
-    <meta name="keywords" content="javascript, ライブラリ, jquery, chart.js">
-
-    <!-- CSSとの紐付け．CSSへのパスは相対パスで記述する． -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-
-    <title>第13回 javascriptライブラリ</title>
+  <meta charset="UTF-8">
+  <title>数字当てゲーム</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="container">
+    <h1>🎯 数字当てゲーム 🎯</h1>
+    <p>1〜100の数字を当ててください！</p>
+    
+    <input type="number" id="guessInput" placeholder="数字を入力 (1〜100)">
+    <button onclick="checkGuess()">決定</button>
+    
+    <p id="message"></p>
+    
+    <button class="reset-btn" onclick="resetGame()">🔄 リセット</button>
+  </div>
 
-    <div class="container">
-        <header>
-            <h1 id="top">コンピュータ・リテラシーⅡ</h1>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">ホーム</a></li>
-                    <li><a href="#">タグリファレンス</a></li>
-                    <li><a href="#">問い合わせ</a></li>
-                </ul>
-            </nav>
-        </header>
+  <footer>
+    <p> Copyright &copy; Masao, All Rights Reserved.</p>
+  </footer>
 
-        <main>
-            <section>
-                <h2>jQuery</h2>
-
-                <div>
-                    <section>
-                        <h3>セレクタ</h3>
-                        <div>
-                            <p id="test-p-1">ほげ</p>
-                            <p class="test-p-2">ほげほげ</p>
-                            <p id="test-p-3">ほげほげほげ</p>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3>メソッド</h3>
-                        <div>
-                            <button type="button" onclick="toggle()">表示・非表示</button>
-                            <button type="button" onclick="slide()">スライド</button>
-                            <button type="button" onclick="fade()">フェード</button>
-                            <button type="button" onclick="color()">CSS操作</button>
-                            <button type="button" onclick="customAnimate()">カスタムアニメーション</button>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3>イベントハンドラ</h3>
-                        <div>
-                            <form action="">
-                                <input id="input-1" type="text">
-                            </form>
-                        </div>
-                    </section>
-                </div>
-
-            </section>
-
-            <section>
-                <h2>Chart.js</h2>
-            </section>
-        </main>
-
-        <footer>
-            Copyright &copy; Osamu HASEGAWA, All Rights Reserved.
-        </footer>
-    </div>
-
-    <!-- 外部のjavascriptを読み込む -->
-    <!-- 読み込む順番が重要 -->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-
-    <!-- 自分のjavascriptファイル -->
-    <script src="./js/jquery-test.js"></script>
-    <script src="./js/chart-test.js"></script>
-
+  <script src="script.js"></script>
 </body>
+</html>
+
+
