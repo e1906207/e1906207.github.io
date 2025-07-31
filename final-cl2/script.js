@@ -1,6 +1,9 @@
 let answer = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 
+
+
+
 function checkGuess() {
   const userGuess = Number(document.getElementById("guessInput").value);
   const message = document.getElementById("message");
