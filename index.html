@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>数字当てゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 数字当てゲーム 🎯</h1>
+    <p>1〜100の数字を当ててください！</p>
+    
+    <input type="number" id="guessInput" placeholder="数字を入力 (1〜100)">
+    <button onclick="checkGuess()">決定</button>
+    
+    <p id="message"></p>
+    
+    <button class="reset-btn" onclick="resetGame()">🔄 リセット</button>
+  </div>
+
+  <footer>
+    <p>© 2025 数字当てゲーム by あなたの名前</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
